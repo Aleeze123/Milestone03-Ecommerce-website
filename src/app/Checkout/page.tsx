@@ -177,7 +177,7 @@ const Checkout = () => {
               </div>
 
               <div className="mt-6 flex items-center justify-between">
-                <a href="/ProductPage" className="font-medium text-yellow-500 hover:text-yellow-400">
+                <a href="/Shop" className="font-medium text-yellow-500 hover:text-yellow-400">
                   Back to Shop
                 </a>
                 <button

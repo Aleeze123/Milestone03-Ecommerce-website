@@ -105,7 +105,7 @@ const ContactPage = () => {
             </Link>
             <button
               type="submit"
-              className="group relative w-1/2 flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-gray-900 bg-yellow-500 hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+              className="group relative w-1/2 flex justify-center py-2 px-4  text-sm font-medium rounded-md bg-black text-yellow-400 border-[1px] border-yellow-400 hover:bg-yellow-400   hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
             >
               Send Message
             </button>

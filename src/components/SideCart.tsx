@@ -102,8 +102,9 @@ const SideCart: FC<Props> = ({ visible, onRequestClose }) => {
         </div>
         <div className="space-y-4">
         <Link href="/Checkout" legacyBehavior>
-  <a
-    className="w-full bg-yellow-300 py-2 rounded-md text-gray-900 font-semibold hover:bg-yellow-400 transition duration-300"
+        <a
+  className="w-full py-3 px-6 rounded-md bg-black text-yellow-400 border-[1px] border-yellow-400 font-semibold hover:bg-yellow-400 hover:text-white transition duration-300"
+
     onClick={(e) => {
       // Close the cart
       e.preventDefault(); 
