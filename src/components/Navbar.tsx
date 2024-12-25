@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="container mx-auto flex items-center justify-between h-16 px-4 md:px-8">
           <Link href="/" passHref>
             <div className="flex items-center">
-              <img src="/logo.png" alt="Logo" width={90} className="object-contain h-[100px]" />
+              <img src="/logoo.png" alt="Logo" width={90} className="object-contain h-[100px]" />
             </div>
           </Link>
           <div className="hidden md:flex items-center space-x-8">

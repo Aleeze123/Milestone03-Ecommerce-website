@@ -2,7 +2,7 @@
 import React, { useState, FormEvent } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';  
-
+import Image from 'next/image';
 const Checkout = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -13,6 +13,16 @@ const Checkout = () => {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center pt-12 pb-8 px-4 sm:px-6 lg:px-8">
+         <div className="w-full h-64 sm:h-80 md:h-80 lg:h-96 relative">
+              <Image
+                src="/checkout.png"
+                alt=""
+                layout="fill"
+                objectFit="cover"
+                className="absolute inset-0"
+              />
+            </div>
+        
       <div className="max-w-lg w-full space-y-8">
         {isSubmitted ? (
           // Message after purchase
@@ -39,11 +49,7 @@ const Checkout = () => {
         ) : (
           // Checkout form
           <>
-            <div>
-              <h2 className="mt-6 text-center text-4xl font-extrabold text-white">
-                Checkout
-              </h2>
-            </div>
+           
             <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
               <input type="hidden" name="remember" value="true" />
               <div className="rounded-md shadow-sm space-y-4">
@@ -175,11 +181,12 @@ const Checkout = () => {
                   Back to Shop
                 </a>
                 <button
-                  type="submit"
-                  className="group relative w-full sm:w-1/2 flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-gray-900 bg-yellow-500 hover:bg-yellow-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
-                >
-                  Complete Purchase
-                </button>
+  type="submit"
+  className="group relative w-full sm:w-1/2 flex justify-center py-2 px-4  text-sm font-medium rounded-md text-yellow-400 border-[1px] border-yellow-400 hover:bg-yellow-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500 transition-all"
+>
+  Complete Purchase
+</button>
+
               </div>
             </form>
           </>

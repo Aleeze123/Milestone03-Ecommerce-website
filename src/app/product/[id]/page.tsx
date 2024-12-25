@@ -25,14 +25,14 @@ const ProductDetailPage = ({ params }: ProductDetailPageProps) => {
 
   return (
     <div className="container mx-auto px-4 py-8 mt-24">
- <button 
-  onClick={() => router.back()} 
-  className="mb-4 sm:mt-4 text-blue-500 underline"
->
-  Back
-</button>
+      <button 
+        onClick={() => router.back()} 
+        className="mb-4 sm:mt-4 text-blue-500 underline"
+      >
+        Back
+      </button>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 bg-black ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:bg-black sm:text-white">
         <Image
           src={product.image}
           alt={product.name}
@@ -54,7 +54,7 @@ const ProductDetailPage = ({ params }: ProductDetailPageProps) => {
           </div>
           <p className="text-base md:text-lg text-gray-200 mb-2">{product.description}</p>
           <p className="text-xl md:text-3xl font-bold text-blue-600 mt-2">${product.price}</p>
-          
+
           <div className="mt-4">
             <label htmlFor="color" className="block text-white font-semibold">Select Color:</label>
             <div className="flex space-x-4 mt-2">
@@ -68,7 +68,7 @@ const ProductDetailPage = ({ params }: ProductDetailPageProps) => {
               ))}
             </div>
           </div>
-          
+
           <div className="mt-4">
             <label htmlFor="size" className="block text-white font-semibold">Select Size:</label>
             <select id="size" className="mt-2 p-2 border border-gray-300 rounded bg-white text-black">
